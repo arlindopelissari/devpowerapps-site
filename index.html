@@ -1,14 +1,125 @@
 <!doctype html>
 <html lang="pt-BR">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Dev Power Apps — Portfólio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dev Power Apps — Portfólio e Soluções em Power Platform</title>
+  <meta name="description" content="Consultoria Power Apps, Power Automate, Power BI e integrações. Veja nosso portfólio de projetos reais." />
+  <style>
+    :root{
+      --bg:#0f1226;--card:#141838;--txt:#e8ebff;--muted:#a8b0d8;--pri:#7c5cff;--pri-2:#5ce1e6;--ok:#2dd4bf;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:radial-gradient(85% 85% at 10% 10%, #171b3a 0%, #0f1226 55%, #0b0e20 100%);color:var(--txt);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
+    a{color:var(--pri-2);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .wrap{max-width:1100px;margin:0 auto;padding:28px}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
+    .logo-dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--pri),var(--pri-2))}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0));border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:22px}
+    .title{font-size:clamp(28px,4.2vw,48px);line-height:1.1;margin:0 0 14px}
+    .subtitle{color:var(--muted);margin:0 0 18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:30px}
+    .img-card{background:var(--card);border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
+    .img-card img{width:100%;display:block}
+    .footer{margin:38px 0 6px;color:#8e96bf;font-size:14px;text-align:center}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:14px;background:linear-gradient(135deg,var(--pri),var(--pri-2));color:#0b0e20;font-weight:700;border:0;cursor:pointer;box-shadow:0 6px 22px rgba(124,92,255,.28)}
+  .portfolio{margin-top:34px}.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}@media(max-width:1100px){.portfolio-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr}}
+.port-card{position:relative;overflow:hidden;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02)}
+.port-card img{display:block;width:100%;height:190px;object-fit:cover;filter:saturate(1.02)}
+.port-card figcaption{padding:10px 12px;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,.06)}
+.port-card button{all:unset;cursor:pointer;position:absolute;inset:0}
+#lightbox{border:0;border-radius:16px;padding:0;background:rgba(12,14,32,.9)}
+#lightbox::backdrop{background:rgba(0,0,0,.6)}
+#lightbox img{max-width:90vw;max-height:80vh;display:block}
+#lightbox .lb-head{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;color:#dbe0ff;border-bottom:1px solid rgba(255,255,255,.1)}
+#lightbox .lb-body{padding:10px 14px}
+</style>
 </head>
 <body>
-<h1>Dev Power Apps</h1>
-<p>Site de portfólio</p>
-<script src="script.js"></script>
+  <div class="wrap">
+    <nav class="nav">
+      <div class="logo"><span class="logo-dot"></span> Dev Power Apps</div>
+      <div>
+        <a class="kbd" href="#portfolio">Portfólio</a>
+        &nbsp;·&nbsp;
+        <a class="kbd" href="#contato">Fale comigo</a>
+      </div>
+    </nav>
+
+    <section class="card">
+      <h1 class="title">Portfólio de Projetos Reais</h1>
+      <p class="subtitle">Soluções entregues usando Power Apps, Power Automate, Power BI e integrações com TOTVS Protheus, SQL Server e sistemas de produção.</p>
+    </section>
+
+    <section class="grid">
+      <div class="img-card"><img src="projeto1.png" alt="Tela Politriz Pedrini"></div>
+      <div class="img-card"><img src="projeto2.png" alt="Tela de Despesas de Viagem"></div>
+      <div class="img-card"><img src="projeto3.png" alt="Tela de Controle de Chapas"></div>
+      <div class="img-card"><img src="projeto4.png" alt="Tela de Login TOTVS"></div>
+    </section>
+
+    <section id="portfolio" class="portfolio card">
+      <h3 style="margin:0 0 10px">Portfólio</h3>
+      <p class="subtitle">Algumas telas reais feitas em Power Apps e integrações.</p>
+      <div class="portfolio-grid">
+        <figure class="port-card">
+          <img src="assets/portfolio-politriz.png" alt="Politriz Pedrini — controle de produção" loading="lazy" />
+          <figcaption>Politriz Pedrini — controle de produção</figcaption>
+          <button aria-label="Abrir imagem" data-title="Politriz Pedrini — controle de produção" data-src="assets/portfolio-politriz.png"></button>
+        </figure>
+        <figure class="port-card">
+          <img src="assets/portfolio-despesas.png" alt="App de Despesas — fluxo de viagens" loading="lazy" />
+          <figcaption>Despesas de Viagem — aprovações</figcaption>
+          <button aria-label="Abrir imagem" data-title="Despesas de Viagem — aprovações" data-src="assets/portfolio-despesas.png"></button>
+        </figure>
+        <figure class="port-card">
+          <img src="assets/portfolio-enderecos.png" alt="Endereçamento de estoque" loading="lazy" />
+          <figcaption>Endereçamento de estoque — câmera integrada</figcaption>
+          <button aria-label="Abrir imagem" data-title="Endereçamento de estoque — câmera integrada" data-src="assets/portfolio-enderecos.png"></button>
+        </figure>
+        <figure class="port-card">
+          <img src="assets/portfolio-protheus.png" alt="Form de cadastro Protheus" loading="lazy" />
+          <figcaption>Formulários Protheus — autenticação</figcaption>
+          <button aria-label="Abrir imagem" data-title="Formulários Protheus — autenticação" data-src="assets/portfolio-protheus.png"></button>
+        </figure>
+      </div>
+      <p style="margin-top:12px;color:var(--muted);font-size:13px">Coloque as imagens em <code>/assets/</code> com os nomes acima. Eu gero o ZIP se quiser.</p>
+    </section>
+
+    <section id="contato" class="card" style="margin-top:28px">
+      <h3>Contato</h3>
+      <p class="subtitle">Chama no Whats ou manda e-mail. Resposta rápida.</p>
+      <p>
+        <a class="btn" href="https://wa.me/5527998807382" target="_blank">WhatsApp</a>
+        <a class="btn" href="mailto:contato@devpowerapps.com.br">E-mail</a>
+      </p>
+    </section>
+
+    <footer class="footer">© <span id="y"></span> Dev Power Apps — todos os direitos reservados.</footer>
+  </div>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+<dialog id="lightbox">
+    <div class="lb-head">
+      <strong id="lb-title">Visualização</strong>
+      <button onclick="document.getElementById('lightbox').close()" class="kbd" aria-label="Fechar">Fechar</button>
+    </div>
+    <div class="lb-body">
+      <img id="lb-img" alt="Preview" />
+    </div>
+  </dialog>
+  <script>
+    const lb = document.getElementById('lightbox');
+    const lbImg = document.getElementById('lb-img');
+    const lbTitle = document.getElementById('lb-title');
+    document.addEventListener('click', (e)=>{
+      const btn = e.target.closest('.port-card button');
+      if(!btn) return;
+      lbImg.src = btn.dataset.src;
+      lbTitle.textContent = btn.dataset.title || 'Visualização';
+      lb.showModal();
+    });
+  </script>
 </body>
 </html>
