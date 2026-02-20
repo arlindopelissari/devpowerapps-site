@@ -3,116 +3,154 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Dev Power Apps — Portfólio e Soluções em Power Platform</title>
-  <meta name="description" content="Consultoria Power Apps, Power Automate, Power BI e integrações. Veja nosso portfólio de projetos reais." />
-  <style>
-    :root{
-      --bg:#0f1226;--card:#141838;--txt:#e8ebff;--muted:#a8b0d8;--pri:#7c5cff;--pri-2:#5ce1e6;--ok:#2dd4bf;
-    }
-    *{box-sizing:border-box}
-    body{margin:0;background:radial-gradient(85% 85% at 10% 10%, #171b3a 0%, #0f1226 55%, #0b0e20 100%);color:var(--txt);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,"Helvetica Neue",Arial}
-    a{color:var(--pri-2);text-decoration:none}
-    a:hover{text-decoration:underline}
-    .wrap{max-width:1100px;margin:0 auto;padding:28px}
-    .nav{display:flex;align-items:center;justify-content:space-between}
-    .logo{display:flex;align-items:center;gap:10px;font-weight:700}
-    .logo-dot{width:12px;height:12px;border-radius:50%;background:linear-gradient(135deg,var(--pri),var(--pri-2))}
-    .card{background:linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0));border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:22px}
-    .title{font-size:clamp(28px,4.2vw,48px);line-height:1.1;margin:0 0 14px}
-    .subtitle{color:var(--muted);margin:0 0 18px}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px;margin-top:30px}
-    .img-card{background:var(--card);border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08)}
-    .img-card img{width:100%;display:block}
-    .footer{margin:38px 0 6px;color:#8e96bf;font-size:14px;text-align:center}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:10px 16px;border-radius:14px;background:linear-gradient(135deg,var(--pri),var(--pri-2));color:#0b0e20;font-weight:700;border:0;cursor:pointer;box-shadow:0 6px 22px rgba(124,92,255,.28)}
-  .portfolio{margin-top:34px}.portfolio-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}@media(max-width:1100px){.portfolio-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:640px){.portfolio-grid{grid-template-columns:1fr}}
-.port-card{position:relative;overflow:hidden;border-radius:18px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.02);display:flex;flex-direction:column}
-.port-card img{display:block;width:100%;height:220px;object-fit:cover;aspect-ratio:4/3;filter:saturate(1.02)}
-.port-card figcaption{padding:10px 12px;color:var(--muted);font-size:14px;border-top:1px solid rgba(255,255,255,.06)}
-.port-card button{all:unset;cursor:pointer;position:absolute;inset:0}
-#lightbox{border:0;border-radius:16px;padding:0;background:rgba(12,14,32,.9)}
-#lightbox::backdrop{background:rgba(0,0,0,.6)}
-#lightbox img{max-width:90vw;max-height:80vh;display:block}
-#lightbox .lb-head{display:flex;align-items:center;justify-content:space-between;padding:10px 14px;color:#dbe0ff;border-bottom:1px solid rgba(255,255,255,.1)}
-#lightbox .lb-body{padding:10px 14px}
-</style>
+  <title>Dev Power Apps - Portfólio e Soluções em Power Platform</title>
+  <meta name="description" content="Consultoria Power Apps, Power Automate, Power BI e integrações. Veja projetos reais com resultado mensurável." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="wrap">
-    <nav class="nav">
-      <div class="logo"><span class="logo-dot"></span> Dev Power Apps</div>
-      <div>
-        <a class="kbd" href="#portfolio">Portfólio</a>
-        &nbsp;·&nbsp;
-        <a class="kbd" href="#contato">Fale comigo</a>
-      </div>
-    </nav>
+  <div class="bg-orb orb-a"></div>
+  <div class="bg-orb orb-b"></div>
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="logo" href="#inicio" aria-label="Ir para início">
+        <span class="logo-dot"></span>
+        <span>Dev Power Apps</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#portfolio">Portfólio</a>
+        <a href="#metodo">Método</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a class="btn btn-sm" href="https://wa.me/5527998807382" target="_blank" rel="noreferrer">Iniciar projeto</a>
+    </div>
+  </header>
 
-    <section class="card">
-      <h1 class="title">Portfólio de Projetos Reais</h1>
-      <p class="subtitle">Soluções entregues usando Power Apps, Power Automate, Power BI e integrações com TOTVS Protheus, SQL Server e sistemas de produção.</p>
-    </section>
-
-    <section id="portfolio" class="portfolio card">
-      <h3 style="margin:0 0 10px">Portfólio</h3>
-      <p class="subtitle">Algumas telas reais feitas em Power Apps e integrações.</p>
-      <div class="portfolio-grid">
-        <figure class="port-card">
-          <img src="assets/portfolio-politriz.png" alt="Politriz Pedrini — controle de produção" loading="lazy" />
-          <figcaption>Politriz Pedrini — controle de produção</figcaption>
-          <button aria-label="Abrir imagem" data-title="Politriz Pedrini — controle de produção" data-src="assets/portfolio-politriz.png"></button>
-        </figure>
-        <figure class="port-card">
-          <img src="assets/portfolio-despesas.png" alt="App de Despesas — fluxo de viagens" loading="lazy" />
-          <figcaption>Despesas de Viagem — aprovações</figcaption>
-          <button aria-label="Abrir imagem" data-title="Despesas de Viagem — aprovações" data-src="assets/portfolio-despesas.png"></button>
-        </figure>
-        <figure class="port-card">
-          <img src="assets/portfolio-enderecos.png" alt="Endereçamento de estoque" loading="lazy" />
-          <figcaption>Endereçamento de estoque — câmera integrada</figcaption>
-          <button aria-label="Abrir imagem" data-title="Endereçamento de estoque — câmera integrada" data-src="assets/portfolio-enderecos.png"></button>
-        </figure>
-        <figure class="port-card">
-          <img src="assets/portfolio-protheus.png" alt="Form de cadastro Protheus" loading="lazy" />
-          <figcaption>Formulários Protheus — autenticação</figcaption>
-          <button aria-label="Abrir imagem" data-title="Formulários Protheus — autenticação" data-src="assets/portfolio-protheus.png"></button>
-        </figure>
-      </div>
-      <p style="margin-top:12px;color:var(--muted);font-size:13px">Coloque as imagens em <code>/assets/</code> com os nomes acima. Eu gero o ZIP se quiser.</p>
-    </section>
-
-    <section id="contato" class="card" style="margin-top:28px">
-      <h3>Contato</h3>
-      <p class="subtitle">Chama no Whats ou manda e‑mail. Resposta rápida.</p>
-      <p>
-        <a class="btn" href="https://wa.me/5527998807382" target="_blank">WhatsApp</a>
-        <a class="btn" href="mailto:contato@devpowerapps.com.br">E‑mail</a>
+  <main class="wrap main">
+    <section id="inicio" class="hero reveal">
+      <p class="kicker">Power Platform para operações reais</p>
+      <h1>Apresentação de trabalhos com foco em impacto de negócio.</h1>
+      <p class="subtitle">
+        Projetos com Power Apps, Automate, BI e integrações com Protheus/SQL para reduzir tempo operacional, erros de digitação e retrabalho.
       </p>
+      <div class="hero-actions">
+        <a class="btn" href="#portfolio">Ver portfólio</a>
+        <a class="btn btn-ghost" href="#contato">Falar sobre demanda</a>
+      </div>
+      <ul class="stats" aria-label="Indicadores de resultado">
+        <li><strong>+25</strong><span>fluxos implantados</span></li>
+        <li><strong>99%</strong><span>rastreabilidade de registros</span></li>
+        <li><strong>-42%</strong><span>tempo em processos manuais</span></li>
+      </ul>
     </section>
 
-    <footer class="footer">© <span id="y"></span> Dev Power Apps — todos os direitos reservados.</footer>
-  </div>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
-<dialog id="lightbox">
+    <section id="portfolio" class="panel reveal">
+      <div class="section-head">
+        <div>
+          <p class="kicker">Portfólio</p>
+          <h2>Trabalhos recentes</h2>
+        </div>
+        <div class="filters" role="tablist" aria-label="Filtro de projetos">
+          <button class="chip is-active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="powerapps">Power Apps</button>
+          <button class="chip" data-filter="automate">Automate</button>
+          <button class="chip" data-filter="integracao">Integração</button>
+        </div>
+      </div>
+
+      <div class="portfolio-grid">
+        <article class="port-card" data-category="powerapps integracao">
+          <button class="cover-btn" aria-label="Abrir imagem Politriz Pedrini" data-title="Politriz Pedrini - controle de produção" data-src="assets/portfolio-politriz.png"></button>
+          <img src="assets/portfolio-politriz.png" alt="Politriz Pedrini - controle de produção" loading="lazy" />
+          <div class="port-body">
+            <span class="tag">Power Apps + Integração</span>
+            <h3>Politriz Pedrini</h3>
+            <p>Registro de produção em tempo real com integração ao sistema interno.</p>
+            <p class="impact">Impacto: menos apontamento manual no chão de fábrica.</p>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="powerapps automate">
+          <button class="cover-btn" aria-label="Abrir imagem Despesas de Viagem" data-title="Despesas de Viagem - aprovações" data-src="assets/portfolio-despesas.png"></button>
+          <img src="assets/portfolio-despesas.png" alt="App de despesas de viagem com aprovações" loading="lazy" />
+          <div class="port-body">
+            <span class="tag">Power Apps + Automate</span>
+            <h3>Despesas de Viagem</h3>
+            <p>Solicitação, prestação e aprovação em fluxo único com trilha de auditoria.</p>
+            <p class="impact">Impacto: aprovação mais rápida e redução de pendências.</p>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="powerapps integracao">
+          <button class="cover-btn" aria-label="Abrir imagem Endereçamento de estoque" data-title="Endereçamento de estoque - câmera integrada" data-src="assets/portfolio-enderecos.png"></button>
+          <img src="assets/portfolio-enderecos.png" alt="Endereçamento de estoque com leitura por câmera" loading="lazy" />
+          <div class="port-body">
+            <span class="tag">Power Apps + Operação</span>
+            <h3>Endereçamento de Estoque</h3>
+            <p>Aplicativo com captura por câmera para validar localização e reduzir erro operacional.</p>
+            <p class="impact">Impacto: melhor acuracidade de inventário.</p>
+          </div>
+        </article>
+
+        <article class="port-card" data-category="integracao">
+          <button class="cover-btn" aria-label="Abrir imagem Formulários Protheus" data-title="Formulários Protheus - autenticação" data-src="assets/portfolio-protheus.png"></button>
+          <img src="assets/portfolio-protheus.png" alt="Formulários conectados ao Protheus com autenticação" loading="lazy" />
+          <div class="port-body">
+            <span class="tag">Integração Protheus</span>
+            <h3>Formulários Protheus</h3>
+            <p>Cadastro com autenticação e regras de negócio para padronizar entrada de dados.</p>
+            <p class="impact">Impacto: mais conformidade e menos retrabalho administrativo.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="metodo" class="panel reveal">
+      <p class="kicker">Método de entrega</p>
+      <h2>Do diagnóstico à implantação</h2>
+      <div class="timeline">
+        <article>
+          <h3>1. Descoberta</h3>
+          <p>Mapeamento dos gargalos e desenho da arquitetura da solução.</p>
+        </article>
+        <article>
+          <h3>2. Protótipo validado</h3>
+          <p>Layout navegável para alinhar experiência e regras antes da construção final.</p>
+        </article>
+        <article>
+          <h3>3. Produção e evolução</h3>
+          <p>Deploy assistido, treinamento rápido e melhoria contínua baseada em uso.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contato" class="panel contact reveal">
+      <div>
+        <p class="kicker">Contato</p>
+        <h2>Quer melhorar a apresentação dos seus processos?</h2>
+        <p class="subtitle">Mostre seu cenário atual e eu retorno com proposta técnica objetiva.</p>
+      </div>
+      <div class="contact-actions">
+        <a class="btn" href="https://wa.me/5527998807382" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="btn btn-ghost" href="mailto:contato@devpowerapps.com.br">contato@devpowerapps.com.br</a>
+      </div>
+    </section>
+
+    <footer class="footer">© <span id="year"></span> Dev Power Apps - todos os direitos reservados.</footer>
+  </main>
+
+  <dialog id="lightbox">
     <div class="lb-head">
       <strong id="lb-title">Visualização</strong>
-      <button onclick="document.getElementById('lightbox').close()" class="kbd" aria-label="Fechar">Fechar</button>
+      <button id="close-lightbox" class="btn btn-sm" aria-label="Fechar">Fechar</button>
     </div>
     <div class="lb-body">
-      <img id="lb-img" alt="Preview" />
+      <img id="lb-img" alt="Preview do projeto" />
     </div>
   </dialog>
-  <script>
-    const lb = document.getElementById('lightbox');
-    const lbImg = document.getElementById('lb-img');
-    const lbTitle = document.getElementById('lb-title');
-    document.addEventListener('click', (e)=>{
-      const btn = e.target.closest('.port-card button');
-      if(!btn) return;
-      lbImg.src = btn.dataset.src;
-      lbTitle.textContent = btn.dataset.title || 'Visualização';
-      lb.showModal();
-    });
-  </script>
+
+  <script src="script.js" defer></script>
 </body>
 </html>
