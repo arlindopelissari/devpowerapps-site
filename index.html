@@ -15,16 +15,21 @@
   <div class="bg-orb orb-b"></div>
   <header class="topbar">
     <div class="wrap nav">
-      <a class="logo" href="#inicio" aria-label="Ir para início">
-        <span class="logo-dot"></span>
-        <span>Dev Power Apps</span>
+      <a class="logo" href="#inicio" aria-label="Dev Power Apps - Início">
+        <img class="logo-img" src="logo/LogoDevPowerApps.png" alt="Dev Power Apps" />
       </a>
       <nav class="nav-links">
         <a href="#portfolio">Portfólio</a>
+        <a href="#automate-report">Automate + Report</a>
         <a href="#metodo">Método</a>
         <a href="#contato">Contato</a>
       </nav>
-      <a class="btn btn-sm" href="https://wa.me/5527998807382" target="_blank" rel="noreferrer">Iniciar projeto</a>
+      <a class="btn btn-sm btn-whatsapp" href="https://wa.me/5527998807382" target="_blank" rel="noreferrer">
+        <svg class="icon icon-wa" viewBox="0 0 24 24" aria-hidden="true">
+          <path fill="currentColor" d="M19.05 4.94A9.93 9.93 0 0 0 12 2a10 10 0 0 0-8.66 15l-1.3 4.73 4.86-1.28A10 10 0 1 0 19.05 4.94ZM12 20a7.93 7.93 0 0 1-4.04-1.1l-.29-.17-2.88.76.77-2.8-.19-.3A8 8 0 1 1 12 20Zm4.39-6.07c-.24-.12-1.4-.69-1.62-.76-.21-.08-.37-.12-.52.12s-.6.76-.73.91c-.14.16-.27.17-.5.06s-.95-.35-1.82-1.1a6.77 6.77 0 0 1-1.25-1.56c-.13-.22-.01-.34.1-.46.1-.1.23-.27.35-.4.12-.14.15-.24.23-.4.08-.16.04-.3-.02-.42s-.52-1.26-.72-1.72c-.2-.47-.4-.4-.55-.4h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.57 4.1 3.6.57.24 1.02.39 1.37.5.58.18 1.1.15 1.52.09.46-.07 1.4-.57 1.6-1.11.2-.54.2-1 .14-1.1-.06-.1-.22-.16-.46-.28Z"/>
+        </svg>
+        <span>Iniciar projeto</span>
+      </a>
     </div>
   </header>
 
@@ -104,6 +109,40 @@
             <p class="impact">Impacto: mais conformidade e menos retrabalho administrativo.</p>
           </div>
         </article>
+
+      </div>
+    </section>
+
+    <section id="automate-report" class="panel reveal integration-panel">
+      <p class="kicker">Integração em destaque</p>
+      <h2>Power Automate com Report Server</h2>
+      <p class="subtitle">Arquitetura pensada para orquestrar geração, exportação e envio de relatórios com rastreabilidade de ponta a ponta.</p>
+
+      <div class="logo-strip" aria-label="Tecnologias envolvidas">
+        <span class="logo-pill"><span>PA</span> Power Automate</span>
+        <span class="logo-pill"><span>RS</span> Report Server</span>
+        <span class="logo-pill"><span>SQL</span> SQL Server</span>
+        <span class="logo-pill"><span>ERP</span> Protheus</span>
+        <span class="logo-pill"><span>BI</span> Power BI</span>
+      </div>
+
+      <div class="flow-grid">
+        <article class="flow-node">
+          <h3>1. Gatilho</h3>
+          <p>Execução por horário, evento de base ou aprovação de usuário.</p>
+        </article>
+        <article class="flow-node">
+          <h3>2. Coleta de dados</h3>
+          <p>Consulta SQL/ERP com validações e padronização dos dados.</p>
+        </article>
+        <article class="flow-node">
+          <h3>3. Render relatório</h3>
+          <p>Report Server gera PDF/Excel com template corporativo.</p>
+        </article>
+        <article class="flow-node">
+          <h3>4. Distribuição</h3>
+          <p>Envio automático por e-mail, Teams ou SharePoint com log.</p>
+        </article>
       </div>
     </section>
 
@@ -133,7 +172,12 @@
         <p class="subtitle">Mostre seu cenário atual e eu retorno com proposta técnica objetiva.</p>
       </div>
       <div class="contact-actions">
-        <a class="btn" href="https://wa.me/5527998807382" target="_blank" rel="noreferrer">WhatsApp</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/5527998807382" target="_blank" rel="noreferrer">
+          <svg class="icon icon-wa" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="currentColor" d="M19.05 4.94A9.93 9.93 0 0 0 12 2a10 10 0 0 0-8.66 15l-1.3 4.73 4.86-1.28A10 10 0 1 0 19.05 4.94ZM12 20a7.93 7.93 0 0 1-4.04-1.1l-.29-.17-2.88.76.77-2.8-.19-.3A8 8 0 1 1 12 20Zm4.39-6.07c-.24-.12-1.4-.69-1.62-.76-.21-.08-.37-.12-.52.12s-.6.76-.73.91c-.14.16-.27.17-.5.06s-.95-.35-1.82-1.1a6.77 6.77 0 0 1-1.25-1.56c-.13-.22-.01-.34.1-.46.1-.1.23-.27.35-.4.12-.14.15-.24.23-.4.08-.16.04-.3-.02-.42s-.52-1.26-.72-1.72c-.2-.47-.4-.4-.55-.4h-.47c-.16 0-.42.06-.64.3-.22.24-.84.82-.84 2s.86 2.32.98 2.48c.12.16 1.69 2.57 4.1 3.6.57.24 1.02.39 1.37.5.58.18 1.1.15 1.52.09.46-.07 1.4-.57 1.6-1.11.2-.54.2-1 .14-1.1-.06-.1-.22-.16-.46-.28Z"/>
+          </svg>
+          <span>WhatsApp</span>
+        </a>
         <a class="btn btn-ghost" href="mailto:contato@devpowerapps.com.br">contato@devpowerapps.com.br</a>
       </div>
     </section>
